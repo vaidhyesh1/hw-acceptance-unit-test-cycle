@@ -1,7 +1,7 @@
 
 DirectorsController
   Directors Page
-    Data populates properly in the index page
+    Data populates properly in the index page if there is a match for a director
     Redirects to movie page if there are no match for the director
 
 MoviesController
@@ -21,9 +21,14 @@ MoviesHelper
     Checks if a number is odd
     Checks if a number is even
 
+Movie
+  Check data consistency for director field
+    If there is a director return movies with that director
+    If there is no director return nil
+
 1 deprecation warning total
 
-Finished in 0.35366 seconds (files took 1.65 seconds to load)
-9 examples, 0 failures
+Finished in 0.33638 seconds (files took 1.64 seconds to load)
+11 examples, 0 failures
 
-Coverage report generated for RSpec to /home/ec2-user/environment/hw-acceptance-unit-test-cycle/rottenpotatoes/coverage. 43 / 49 LOC (87.76%) covered.
+Coverage report generated for Cucumber Features, RSpec to /home/ec2-user/environment/hw-acceptance-unit-test-cycle/rottenpotatoes/coverage. 44 / 49 LOC (89.8%) covered.

@@ -4,7 +4,7 @@ RSpec.describe DirectorsController, type: :controller do
     
     describe 'Directors Page' do
         render_views
-        it 'Data populates properly in the index page' do
+        it 'Data populates properly in the index page if there is a match for a director' do
             movie1 = Movie.create({:title => 'Star Wars', :rating => 'PG', :release_date => '1977-05-25', :director => 'George Lucas'})
             movie2 = Movie.create({:title => 'THX-1138', :rating => 'R', :release_date => '1971-03-11', :director => 'George Lucas'})
             get :show, :id => movie1.id

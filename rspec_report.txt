@@ -1,0 +1,29 @@
+
+DirectorsController
+  Directors Page
+    Data populates properly in the index page
+    Redirects to movie page if there are no match for the director
+
+MoviesController
+  Index Page
+    Data populates properly in the index page
+  Sorting alphabetically
+    Should sort the movies alphabetically
+  Create a new movie
+    Should create a new movie based on parameters passed and then redirect to movies page
+  Update a movie
+    Should update a movie based on parameters passed and then redirect to corresponding movie page
+  Delete a movie
+    Should delete a movie based on parameters passed and then redirect to movies page
+
+MoviesHelper
+  Oddness Checks
+    Checks if a number is odd
+    Checks if a number is even
+
+1 deprecation warning total
+
+Finished in 0.35366 seconds (files took 1.65 seconds to load)
+9 examples, 0 failures
+
+Coverage report generated for RSpec to /home/ec2-user/environment/hw-acceptance-unit-test-cycle/rottenpotatoes/coverage. 43 / 49 LOC (87.76%) covered.
